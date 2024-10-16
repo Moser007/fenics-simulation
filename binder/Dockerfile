@@ -1,12 +1,11 @@
-FROM quay.io/fenicsproject/dev:latest
+FROM jupyter/scipy-notebook:latest
 
-# Instalar pacotes adicionais necessários
-RUN pip3 install notebook matplotlib numpy
+# Install FEniCS and other dependencies
+RUN conda install -c conda-forge fenics
 
-# Copiar seu código para o diretório de trabalho
-COPY . /home/fenics/shared
+# Copy your code to the working directory
+COPY . /home/jovyan/
 
-WORKDIR /home/fenics/shared
+WORKDIR /home/jovyan/
 
-# Comando para iniciar o Jupyter Notebook
-CMD ["jupyter-notebook", "--ip", "0.0.0.0", "--no-browser"]
+# The base image already has the correct CMD to start the notebook
