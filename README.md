@@ -11,9 +11,3 @@
 * [Gmsh](http://gmsh.info/) (version 4) for external meshing
 * `meshio` package for mesh conversion (https://github.com/nschloe/meshio)
 * `pygmsh` package for Python API of Gmsh (/https://pypi.org/project/pygmsh/)
-
-## Contact
-
-**Jeremy Bleyer** (jeremy.bleyer@enpc.fr) 
-
-Ecole des Ponts ParisTech, Laboratoire Navier (UMR 8205)
