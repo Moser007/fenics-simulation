@@ -1,4 +1,4 @@
-FROM quay.io/fenicsproject/stable:current
+FROM quay.io/fenicsproject/dev
 
 # Instalar pacotes adicionais
 RUN pip3 install notebook matplotlib numpy
